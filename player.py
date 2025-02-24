@@ -33,3 +33,6 @@ class Player(Turtle):
         bullet = Bullet(self.position())
         self.bullets.append(bullet)
         
+    def reset(self):
+        self.goto(STARTING_POSITION)
+        

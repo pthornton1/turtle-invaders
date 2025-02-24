@@ -20,12 +20,18 @@ class Alien(Turtle):
         self.hideturtle()
         
     def move_right(self):
-        self.right(90)
-        self.forward(10)
         self.left(90)
-        
+        self.forward(10)
+        self.right(90)
         
     def move_left(self):
         self.right(90)
-        self.backward(10)
+        self.forward(10)
         self.left(90)
+    
+    def descend(self):
+        self.forward(10)
+        
+    def remove(self):
+        self.goto(1000,1000)
+        self.hideturtle()

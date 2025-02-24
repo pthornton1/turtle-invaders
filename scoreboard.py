@@ -28,7 +28,6 @@ class Scoreboard(Turtle):
     def add_score(self):
         self.score += 1
         self.write_score()
-        
               
     def lose_life(self):
         self.lives -= 1
